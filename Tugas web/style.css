@@ -1,0 +1,416 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+:root {
+  --first-color: #fa7c30;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.2s;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 10px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  z-index: 100;
+  width: 100%;
+  border: solid 1px rgb(218, 216, 216);
+  position: fixed;
+}
+
+header img {
+  width: 10%;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  position: relative;
+}
+
+.navbar a:hover {
+  color: var(--first-color);
+}
+
+.navbar a::after {
+  content: "";
+  background-color: var(--first-color);
+  width: 0;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* home design */
+.home {
+  padding: 1rem;
+  background: url(asset/bg\ home.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.inner-content {
+  margin-left: 6rem;
+}
+
+.inner-content h1 {
+  margin-top: 130px;
+  color: rgb(52, 41, 41);
+  font-size: 50px;
+}
+
+.inner-content h1 span {
+  color: var(--first-color);
+}
+
+.inner-content p {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.body-btn a {
+  padding: 0.5rem 1.3rem;
+  background-color: var(--first-color);
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+.body-btn a:hover {
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Welcome css */
+.welcome {
+  padding: 0.5rem 7%;
+  background: #f1f4f6;
+}
+
+.main-welcome {
+  display: flex;
+}
+
+.inner-content-welcome {
+  flex: 45rem;
+}
+
+.inner-content-welcome-inner {
+  padding: 0 4rem;
+}
+
+.inner-content-welcome h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.inner-content-welcome h1 span {
+  color: var(--first-color);  
+}
+
+.inner-content-welcome p {
+  font-size: 18px;
+}
+
+.desc {
+  margin-bottom: 40px !important;
+  color: #828588;
+  text-align: left;
+}
+
+.inner-content-welcome img {
+  max-width: 100%;
+  margin-left: 30%;
+}
+
+/* card  */
+.Healtyh-services {
+  padding: 3rem 7%;
+}
+
+.Healtyh-heading {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.Healtyh-heading h1 {
+  font-size: 45px;
+  margin: 5px 0;
+  margin-bottom: 15px;
+}
+
+.Healtyh-heading h1 span {
+  color: var(--first-color);
+}
+
+.Healtyh-main-service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.Healtyh-inner-content {
+  flex: 300px;
+}
+
+.Healtyh-images img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.Healtyh-images img:hover {
+  transform: translateY(-10px);
+}
+
+.Healtyh-inner-headings {
+  background: #f1f4f6;
+  padding: 3rem;
+}
+
+.Healtyh-inner-headings h1 {
+  font-size: 25px !important;
+}
+
+.Healtyh-inner-headings p {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  margin-bottom: 20px;
+}
+
+.Healtyh-inner-headings a {
+  padding: 0.7rem 1.3rem;
+  background-color: var(--first-color);
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.Healtyh-inner-headings a:hover {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+}
+
+/* tabel */
+.tabel {
+  margin-top: 20px;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caps_tabel {
+  margin-left: 100px;
+}
+
+.caps_tabel h1 span {
+  color: var(--first-color);
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.tabel tr:nth-child(1) td,
+.tabel tr:nth-child(2) td,
+.tabel tr:nth-child(1) th,
+.tabel tr:nth-child(2) th {
+  background-color: #f2f2f2;
+}
+
+.tabel tr:nth-child(n + 3) {
+  background-color: #ffffff;
+}
+
+/* Styling Form */
+.isiform {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.desc-form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.desc-form h1 span {
+  color: var(--first-color);
+}
+
+.isiform form {
+  background-color: #f1f4f6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.isiform label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.isiform input[type="text"],
+.isiform input[type="email"],
+.isiform select,
+.isiform textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.isiform textarea {
+  height: 150px;
+}
+
+.isiform input[type="submit"] {
+  background-color: var(--first-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.isiform input[type="submit"]:hover {
+  background-color: #ff6600;
+}
+
+/* popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 200px;
+  background-color: #f1f4f6e7;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.popup i.fa-regular.fa-circle-check {
+  font-size: 50px;
+  color: var(--first-color);
+}
+
+.popup p {
+  margin-top: 10px;
+}
+
+.close_popup {
+  background-color: #fa7c30;
+  color: white;
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 10px auto;
+}
+
+.close_popup:hover {
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-top: 12px;
+  border-radius: 10px;
+}
+
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #f1f4f6e7;
+  margin-top: 90px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.content-ft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content-ft h1 {
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.content-ft p {
+  font-size: 17px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+}
+
+.socials li {
+  margin: 20px 30px;
+}
+
+.socials a {
+  color: black;
+  font-size: 40px;
+}
+
+.socials a:hover {
+  color: rgb(0, 119, 255);
+}
+
+.socials a .fa-instagram:hover {
+  color: #ff6600;
+}
